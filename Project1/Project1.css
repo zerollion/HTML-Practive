@@ -1,0 +1,204 @@
+h1 {
+  font: Consolas;
+  text-align: center;
+  font-size: 2em;
+  background: white;
+  color: #222;
+  text-shadow: 1px 1px 2px gray;
+}
+h2 {
+  font: Consolas;
+  font-size: 1.75em;
+  color: #222222;
+}
+h3 {
+  font: Consolas;
+  font-size: 1.5em;
+  color: #333333;
+}
+.page{
+  opacity: 0.918;
+  position: relative;
+  margin-left: 15%;
+  padding: 1% 1%;
+}
+.contentp1{
+  margin-right: 32%;
+  padding: 0% 1%;
+  background: white;
+}
+.contentp2{
+  padding: 1% 1%;
+  background: white;
+}
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+img{
+  position: fixed;
+}
+.b2{
+  position: fixed;
+  left:1280px;
+}
+ul a:link{
+  text-decoration: inherit;
+  color: inherit;
+}
+ul a:visited{
+  color: inherit;
+}
+p{
+  color: black;
+  font: Helvetica;
+  background: #dddddd;
+}
+p::first-letter{
+  margin-left: 2ex;
+}
+dl,dt,dd,pre,samp,ul,ol {
+  background-color: #dddddd
+}
+/* ------------------aside bar----------------- */
+.asidebar{
+  position: absolute;
+  top:18%;
+  right:1%;
+  width: 25%;
+  height: 90%;
+}
+aside{
+  z-index: 1;
+  background: #dddddd;
+  position: relative;
+  height: 90%;
+  overflow: auto;
+  border: 1px solid #6c0018;
+}
+aside li.hd{
+  background: #6c0018;
+  color: #dddddd;
+  text-align: center;
+}
+aside ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+aside li{
+  display: block;
+  color: #000;
+  padding: 7% 5%;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: serif;
+  border-bottom: 1px solid #6c0018;
+}
+/*-----------------------------------------------*/
+
+/* ------------------nav bar----------------- */
+nav{
+  z-index: 2;
+  background: #dddddd;
+  width: 15%;
+  min-width: 10em;
+  height: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+nav header{
+  font-size: 2.6em;
+  font-family: monospace;
+  font-weight: bold;
+  background-color: #fe280d;
+  color: white;
+  height: 15%;
+}
+.lan{
+  clear: both;
+  padding: 1% 0%;
+  height: 5%;
+}
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li{
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 7% 15%;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: serif;
+}
+nav li:hover:not(.active) {
+  animation-name: cycback1;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+nav li.active{
+  background: #6c0018;
+  color: #dddddd;
+}
+@keyframes cycback1 {
+  from {
+    background: #dddddd;
+    color: black;
+  }
+  to {
+    background: #fe280d;
+    color: #dddddd;
+  }
+}
+/*animation learned from http://www.w3schools.com/*/
+@media screen and (max-width: 1000px){
+    nav{
+        width:100%;
+        height:auto;
+        position:fixed;
+        background: #ddd;
+    }
+    nav ul li{
+        float: left;
+        padding: 15px;
+    }
+    .page{
+      margin-left:0%;
+    }
+    main {
+      margin-top: 10%;
+    }
+    .contentp1{
+      margin-right: 27%;
+    }
+    aside{
+      max-height: 100%;
+    }
+    .asidebar{
+      margin-top: 13%;
+    }
+}
+/*-----------------------------------------------*/
+
+/*---------------- footer -----------------------*/
+footer{
+  margin-top: 0%;
+}
+.ft{
+  background-color: #e60000;
+  color: white;
+}
+/*-----------------------------------------------*/
+/*
+红：#d62d20
+黄：#ffa700
+绿：#008744
+蓝：#0057e7
+中国红：大红 #e60000 深红 #6c0018 #fe280d
+*/
